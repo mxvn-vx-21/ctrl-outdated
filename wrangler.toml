@@ -1,0 +1,18 @@
+name = "ctrl"
+pages_build_output_dir = "public"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Non-secret setting. Used for links inside emails.
+[vars]
+APP_URL = "https://ctrl.monster"
+
+# Create a Hyperdrive config for your Postgres (see README), paste its id here.
+[[hyperdrive]]
+binding = "HYPERDRIVE"
+id = "PASTE_YOUR_HYPERDRIVE_ID"
+
+# Secrets (set in the Cloudflare dashboard, never in this file):
+#   CODE_PEPPER      long random string (32+ chars). NEVER change it once users exist.
+#   RESEND_API_KEY   from resend.com
+#   MAIL_FROM        e.g.  CTRL <no-reply@YOUR-VERIFIED-DOMAIN>

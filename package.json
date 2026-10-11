@@ -1,0 +1,17 @@
+{
+  "name": "ctrl-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev public",
+    "deploy": "wrangler pages deploy public",
+    "test": "node --test test/api.test.mjs"
+  },
+  "dependencies": {
+    "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}
